@@ -1,0 +1,18 @@
+\BOOKMARK [0][-]{chapter.1}{Auftrag}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Projektziele}{}% 2
+\BOOKMARK [0][-]{chapter.3}{Konzept}{}% 3
+\BOOKMARK [1][-]{section.3.1}{Blockschema}{chapter.3}% 4
+\BOOKMARK [1][-]{section.3.2}{Hardware}{chapter.3}% 5
+\BOOKMARK [2][-]{subsection.3.2.1}{Bluetoothmodul}{section.3.2}% 6
+\BOOKMARK [2][-]{subsection.3.2.2}{BT-Beacon}{section.3.2}% 7
+\BOOKMARK [2][-]{subsection.3.2.3}{ICSP-Header}{section.3.2}% 8
+\BOOKMARK [2][-]{subsection.3.2.4}{Audioboard}{section.3.2}% 9
+\BOOKMARK [2][-]{subsection.3.2.5}{Audiooutput}{section.3.2}% 10
+\BOOKMARK [2][-]{subsection.3.2.6}{SD-Karte}{section.3.2}% 11
+\BOOKMARK [2][-]{subsection.3.2.7}{Tasten}{section.3.2}% 12
+\BOOKMARK [2][-]{subsection.3.2.8}{Energieversorgung}{section.3.2}% 13
+\BOOKMARK [1][-]{section.3.3}{Software}{chapter.3}% 14
+\BOOKMARK [2][-]{subsection.3.3.1}{Software Mikrocontroller}{section.3.3}% 15
+\BOOKMARK [2][-]{subsection.3.3.2}{Software PC}{section.3.3}% 16
+\BOOKMARK [0][-]{subsection.3.3.2}{Literaturverzeichnis}{}% 17
+\BOOKMARK [0][-]{chapter*.17}{Anhang}{}% 18
