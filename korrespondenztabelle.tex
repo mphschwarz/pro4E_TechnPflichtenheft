@@ -1,0 +1,11 @@
+Im täglichen Gebrauch wird die microSD-Karte wird mit allen Audiodateien einer Sprache beschrieben und muss somit an der Kasse nur noch mit einer Inventarliste der Audiodateien geladen werden.
+In dieser Inventarliste wird vermerkt, welche Beacons zu welchen Audiodateien korrespondieren.
+Befindet sich der Audioguide in einer Ausstellung, für die nicht bezahlt wurde, wird der Audioguide keine korrespondierende Audiodatei finden und signalisiert über die Lichtfugen, dass die Ausstellung zu verlassen ist.
+
+Die Inventarliste wird an der Kasse über eine serielle Schnittstelle dem Mikrocontroller übergeben, der sie im EEPROM speichert.
+Wird eine andere Sprache als die schon auf der microSD-Karte gespeicherte Sprache gefragt, kann die microSD-Karte mit einer anderen Sprache beschrieben werden, was jedoch circa eine Minute dauern kann.
+
+Die Inventarliste wird von einer Textdatei erstellt, in der vermerkt wird, welcher Beacon zu welcher Ausstellung, Audiodatei und Textdatei gehört.
+Diese Textdatei wird von der Software auf dem PC gelesen und über eine graphische Oberfläche kann das Kassenpersonal dem Audioguide die gewünschten Ausstellungen freischalten.
+
+Am Ende des Besuchs werden die geliketen Beacon-IDs wieder vom PC eingelesen und falls gewünscht kann ein persönliches Dokument mit den geliketen Ausstellungsobjekten zusammengestellt werden.
