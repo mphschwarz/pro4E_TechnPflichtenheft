@@ -3,16 +3,16 @@
 \thispagestyle{fancy} \rhead{\slshape Konzept}
 % ======================================================
 \section{Blockschema}
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
-\includegraphics[scale=1.1]{Bilder/p4_flowchart.png}
+\includegraphics[width=\textwidth]{Bilder/p4_flowchart.png}
 \caption{Blockschema}
 \label{fig:flowchart}
 \end{figure}
 \vspace*{-0.6cm}
+\newpage
 \paragraph*{Aufbereitung:}
 Beim Eintritt in das Museum wird das Dojo individuell angepasst. Dafür werden vom PC aus die Audiofiles mit einer dazugehörigen Korrespondenztabelle\footnote{enthält die Zuordnungen der ID. Nummern der BT-Beacons mit den Audiofiles } auf das Dojo geladen. Dabei werden die Audiofiles direkt auf der $\mu$SD-Karte und die Tabelle auf dem internen EEPROM des Mikrocontrollers gespeichert. Wenn der Switch-Block eine Spannung detektiert (Signalpfad vom USB-Switch aus), soll der Datenpfad über die Bridge geschalten sein, damit die $\mu$SD-Karte direkt als Speichermedium auf dem PC angezeigt wird. So kann das Dojo von der PC Software direkt verwaltet und angepasst werden. Ansonsten ist die $\mu$SD-Karte mit dem Audioboard verbunden, damit dieses die Audiofiles abspielen kann.
-\newpage
 \paragraph*{Benutzung:}
 Wenn der Besucher in die Nähe eines Kunstobjektes kommt, soll über das Bluetoothmodul dessen BT-Beacon erfasst werden. In der Firmware des Mikrocontrollers wird über die stärke der Signalleistung des BT-Beacons verifiziert, ob das Objekt nahe genug, oder welches näher ist. Über den Vibrationsmotor und den LEDs wird dann dem Besucher mitgeteilt, dass hier abrufbare Information ist. Gleichermassen wird auch die Zutrittskontrolle erfolgen, indem die empfangenen ID. Nummern der BT-Beacons mit den abgespeicherten abgeglichen werden. Die Objekte können über den Like-Button geliked werden, wodurch die unique ID. Nummer des BT-Beacons im internen EEPROM abgespeichert wird.
 \paragraph*{Abgabe:}

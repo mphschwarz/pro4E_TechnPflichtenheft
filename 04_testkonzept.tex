@@ -1,0 +1,10 @@
+\chapter{Testkonzept}
+% ================ Einstellungen =======================
+\thispagestyle{fancy} \rhead{\slshape Konzept}
+% ======================================================
+\section{Gesamtsystem}
+Der Prototyp wird vom Team getestet, indem ein Museumsbesuch simuliert wird und so jede Funktion gebraucht wird. Danach werden allfällige Fehler behoben und der Auftraggeber kann das Gerät testen und entscheiden, ob es den Anforderungen genügt.
+\section{Hardware}
+Während der ganzen Entwicklungsphase werden die einzelnen Komponenten (Bluetooth, USB/UART, Audioboard, etc.) getestet. Auf dem Print werden sie nacheinander in Betrieb genommen, um zu testen, ob sie auch zusammen funktionieren. Die Akku-Ladeschaltung wird zuerst auf einem Entwicklungsboard aufgebaut und mit einem Widerstand eine Last simuliert. So werden mehrere Lade- und Entladezyklen simuliert bevor die Schaltung im Gerät verbaut wird.
+\section{Software}
+Mit dem Mikrocontroller werden die sogenannten «Likes» simuliert und an den Computer gesendet. So kann getestet werden, ob die Software die «Likes» empfängt und richtig verarbeitet.
