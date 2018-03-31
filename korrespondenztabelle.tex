@@ -9,3 +9,14 @@ Die Inventarliste wird von einer Textdatei erstellt, in der vermerkt wird, welch
 Diese Textdatei wird von der Software auf dem PC gelesen und über eine graphische Oberfläche kann das Kassenpersonal dem Audioguide die gewünschten Ausstellungen freischalten.
 
 Am Ende des Besuchs werden die geliketen Beacon-IDs wieder vom PC eingelesen und falls gewünscht kann ein persönliches Dokument mit den geliketen Ausstellungsobjekten zusammengestellt werden.
+
+
+(Erklärung Dataflow)
+Auf dem PC werden die Audiodateien mit für den Nutzer sinnvollen Namen gepeichert, wobei eine Textdatei angibt, welche Audiodateien zu welchen Beacons und Ausstellungen gehören.
+Diese Textdatei wird vom Nutzer erstellt und kann erweitert werden, sollte sich etwas an den Ausstellungen ändern.
+
+Der Package-maker verwendet die Inventardatei um aus den Audiodateien sprachspezifische Pakete zusammenzustellen, jede mit einer sprachspezifischen Inventarsdatei.
+Die Audiodateien in den Paketen sind nun umbenannt, damit sie in der richtigen Reihenfolge auf den Audioguide geladen werden können.
+Die Inventarsdatei hat in derselben Reihenfolge eine Liste der Beacons, wobei jeder Beacon noch ein Datenfeld hat, das angibt, ob der Nutzer Zugriff auf das Ausstellungsobjekt hat und ob das Ausstellungsobjekt geliket wurde.
+
+An der Kasse kann für jeden Besucher, über eine graphische Oberfläche, die Inventarsdatei mit den bezahlten Ausstellungen angepasst werden und auf den Mikrocontroller geladen werden.
